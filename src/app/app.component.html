@@ -1,4 +1,21 @@
-<!-- hear can place Header component -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Bank Currency</a>
+    <button class="navbar-toggler" type="button" (click)="navbarCollapsed = !navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="container">
   <div class="mf-body row">
@@ -6,4 +23,3 @@
   </div>
 </div>
 
-<!-- hear can place Footer component -->
