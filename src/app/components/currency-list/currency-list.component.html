@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-6">
+    <p class="title"><strong>Available Currencies (<span class="warn-c">{{availableDate | date}}</span>)</strong></p>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th style="text-align:center">Currency</th>
+          <th style="text-align:center">Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of availableCurrencyList.exchangeRateDetails; trackBy: trackByFn">
+          <td>{{item.currency}}</td>
+          <td>{{item.rate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col-md-6">
+    <p class="title"><strong>All Currencies Name</strong></p>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th style="text-align:center">Country</th>
+          <th style="text-align:center">Acronym</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of currencyList; trackBy: trackByFn">
+          <td>{{item.countryName}}</td>
+          <td>{{item.acronymAbb}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

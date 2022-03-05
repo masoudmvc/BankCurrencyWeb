@@ -1,0 +1,22 @@
+.desc-title {
+  margin-top: 20px;
+  margin-bottom: 15;
+  font-weight: 600;
+}
+
+.input-box {
+  margin-top: 40px;
+}
+
+.element-input {
+  margin-top: 15px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.result-box {
+  margin-top: 50px;
+}

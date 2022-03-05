@@ -10,3 +10,7 @@
 .clh-box { background-color: #f1efe2; } */
 
 .multi_lines_text { white-space: pre-line; }
+
+.pointer {
+  cursor: pointer;
+}
